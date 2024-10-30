@@ -14,7 +14,8 @@ async function startParseServer() {
         databaseURI: process.env.DB_URL,
         cloud: "./cloud/main.js",
         fileKey: "optionalFileKey",
-        serverURL: "http://localhost:1337/parse",
+        // serverURL: "http://localhost:1337/parse",
+        serverURL: "http://15.206.84.123:1337/parse",
         appId: "myAppId",
         masterKey: "myMasterKey", // Keep this key secret!
         encodeParseObjectInCloudFunction: false,
@@ -30,7 +31,8 @@ async function startParseServer() {
     const dashboard = new ParseDashboard({
         apps: [
             {
-                serverURL: "http://localhost:1337/parse",
+                // serverURL: "http://localhost:1337/parse",
+                serverURL: "http://15.206.84.123:1337/parse",
                 appId: "myAppId",
                 masterKey: "myMasterKey",
                 appName: "MyApp",
