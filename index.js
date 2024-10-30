@@ -45,7 +45,7 @@ async function startParseServer() {
             },
         ],
         // Allow insecure HTTP (for development only)
-        allowInsecureHTTP: false,
+        allowInsecureHTTP: true,
     });
 
     // Mount Parse Dashboard at '/dashboard' URL prefix (optional)
